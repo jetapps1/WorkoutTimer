@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WorkoutTimer</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="playDesc">playButton</string>
+    <string name ="pauseDesc">pauseButton</string>
+    <string name="resetDesc">resetButton</string>
+    <string name="txtEditText">Enter your workout type:</string>
+    <string name="prevActivity">Save a workout to see previous activities!</string>
+</resources>

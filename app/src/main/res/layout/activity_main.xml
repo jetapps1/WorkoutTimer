@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <TextView
+            android:id="@+id/txtPrevWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/prevActivity"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="56sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="43dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/playDesc"
+                android:onClick="onClickStart"
+                android:src="@android:drawable/ic_media_play"
+                android:text="@string/start"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <ImageButton
+                android:id="@+id/stop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/pauseDesc"
+                android:onClick="onClickStop"
+                android:src="@android:drawable/ic_media_pause"
+                android:text="@string/stop" />
+
+            <ImageButton
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/resetDesc"
+                android:onClick="onClickReset"
+                android:src="@android:drawable/ic_menu_revert"
+                android:text="@string/reset" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtWorkoutType"
+                android:layout_width="184dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:gravity="center"
+                android:text="@string/txtEditText" />
+
+            <EditText
+                android:id="@+id/editWorkout"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+</LinearLayout>
+
